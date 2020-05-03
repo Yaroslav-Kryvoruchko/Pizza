@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.menu__maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5rem auto;
+}
+
+#address__works {
+    border-top: 8px solid #222020;
+}
+
+.address__works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.top__title {
+    margin-top: 0;
+    background: #222020;
+    color: white;
+    padding: 0.5rem 3rem;
+    font-size: 1.2rem;
+}
+
+.main__title {
+    font: inherit;
+    font-size: 2rem;
+    color: #222020;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    width: 80%;
+    text-align: center;
+}
+
+.address__works__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.address__works__items {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.address__works__item h3 {
+    color: #222020;
+    font-size: 1.5rem;
+}
+
+.address__works__item h4 {
+    color: #535353;
+    margin: 0;
+}
+
+.address__works button {
+    background: none;
+    border: 2px solid #222020;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    transition: background 0.3s ease 0s;
+}
+
+.address__works button:hover {
+    background: #222020;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease 0s;
+}
+
+.address__works button:focus {
+    outline: none;
+}
+
+.address__works img {
+    margin: 2rem auto;
+}
+
+@media (min-width: 40rem) {
+    .top__title {
+        padding: 0.5rem 5rem;
+        font-size: 1.3rem;
+    }
+
+    .main__title {
+        font-size: 3rem;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .address__works__center {
+       flex-direction: row;
+    }
+
+    .address__works__items {
+        list-style: none;
+        text-align: center;
+        padding: 2.5rem;
+    }
+
+    .address__works__item h3 {
+        font-size: 1.3rem;
+    }
+    
+}
+
+iframe {
+    width: 90%;
+    height: 300px;
+}
+
+@media (min-width: 40rem) {
+    iframe {
+        width: 1200px;
+        height: 450px;
+    }
+}
+
+

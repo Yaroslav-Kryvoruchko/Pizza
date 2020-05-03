@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.mobile__button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 95%;
+}
+
+.mobile__button button {
+    width: 50px;
+    height: 50px;
+    background: rgba(83, 83, 83, 0.2);
+    border: 1px solid #535353;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile__button button:focus {
+    outline: none;
+}
+
+.line {
+    width: 40px;
+    height: 5px;
+    background: white;
+    border: 1px solid white;
+    margin: 0.3rem auto;
+}
+
+.mobile__menu {
+    position: fixed;
+    background: #222020;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease 0s;
+}
+
+.mobile-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu__items {
+    position: relative;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    top: 100px;
+}
+
+.mobile-menu__item {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid white;
+    padding: 1rem;
+}
+
+.mobile-menu__item a {
+    text-decoration: none;
+    font: inherit;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.title-top a{
+    color: #de5021;
+}
+
+.title-down {
+    border: none;
+}
+
+.close-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 91%;
+    margin-top: 1rem;
+}
+
+.close-button button {
+    width: 50px;
+    height: 50px;
+    background: rgba(83, 83, 83, 0.2);
+    border: 1px solid #535353;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cross {
+    width: 50px;
+    height: 3px;
+    background: white;
+    border: 1px solid white;
+    transform: rotateZ(45deg);
+}
+
+.cross2 {
+    width: 50px;
+    height: 3px;
+    background: white;
+    border: 1px solid white;
+    transform: translateY(-100%) rotateZ(-45deg);
+}
+
+.close-button button:focus {
+    outline: none;
+}
+
+.main-header {
+    background: rgba(34, 32, 32, 1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.header__items {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.header__item {
+   padding: 0 3rem;
+}
+
+.header__item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease 0s;
+}
+
+.gray-text a {
+    color: #cccccc;
+}
+
+.header__item a:hover {
+    color: #ccc;
+    transition: color 0.3s ease 0s;
+}
+
+@media (min-width: 40rem) {
+    .header__items {
+        display: flex;
+    }
+
+    .main-header {
+        background: rgba(34, 32, 32, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        padding: 0;
+    }
+
+    .mobile__button {
+        display: none;
+    }
+}
+
+.main__footer {
+    background: black;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.footer__items {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer__item {
+    color: white;
+}
+
+.footer__item a {
+    text-decoration: none;
+}
+
+.footer__item img {
+    background: white;
+}
+
+.footer__item h3 {
+    font-size: 1rem;
+}
+
+.footer__item input {
+    padding: 0.2rem 1rem;
+    width: 300px;
+    height: 30px;
+    border: 2px solid white;
+}
+
+.footer__item input:focus {
+    outline: none;
+}
+
+.footer__item button {
+    width: 300px;
+    border: 1px solid white;
+    background: white;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease 0s,
+    border 0.3s ease 0s;
+}
+
+.footer__item button:hover {
+    background: black;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease 0s,
+    border 0.3s ease 0s;
+}
+
+.footer__item button:focus {
+    outline: none;
+}
+
+@media (min-width: 40rem) {
+    .footer {
+        flex-direction: row;
+        height: 200px;
+    }
+}
+
+.open {
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
+}
