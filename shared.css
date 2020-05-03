@@ -225,11 +225,17 @@ body {
     padding: 0.2rem 1rem;
     width: 300px;
     height: 30px;
-    border: 2px solid white;
+    border: 1.5px solid white;
 }
 
 .footer__item input:focus {
     outline: none;
+}
+
+.footer__item input.invalid,
+.footer__item select.invalid,
+.footer__item :invalid {
+    border-color: red !important;
 }
 
 .footer__item button {
